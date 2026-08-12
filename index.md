@@ -1,160 +1,122 @@
-Privacy Policy for Blob.you
+# Privacy Policy for Blob.you
 
+**Policy version:** 5.0
 **Effective date:** July 28, 2026  
-**Last updated:** July 28, 2026
+**Last updated:** August 12, 2026
 
-FirstBitStudio ("FirstBitStudio," "we," "us," or "our") provides the mobile game **Blob.you** (the "Game"). This Privacy Policy explains what information the Game processes, why it is processed, when it is sent to a third party, and the choices available to players.
+FirstBitStudio ("FirstBitStudio," "we," "us," or "our") provides the mobile game **Blob.you** (the "Game"). This Privacy Policy explains the limited information processed by the Game and the choices available to players.
 
-This policy applies to the Android and iOS versions of the Game. It does not apply to third-party websites or services that may be linked from the Game.
+This policy applies to the Android and iOS versions of the Game. It does not apply to third-party websites or services opened outside the Game.
 
-## 1. Summary
+## 1. Current Version at a Glance
 
-- The Game does not require an account.
-- The current version does not contain advertising, in-app purchases, social features, or cross-app tracking.
+- The Game does not require or provide player accounts.
+- The current version does not contain advertising, in-app purchases, social features, cross-app tracking, Unity Analytics, or another gameplay-analytics service.
+- Unity Engine Diagnostics, cloud crash reporting, and automatic diagnostic reporting are disabled in the current version.
+- The Game does not automatically transmit gameplay activity, session duration, crash logs, diagnostic information, device identifiers, IP-derived location, or other player data to FirstBitStudio or Unity Analytics.
 - Basic progress and settings are stored locally on the player's device.
-- Optional gameplay analytics are sent to Unity Analytics only after the player selects **Allow** on the analytics consent screen.
-- Declining analytics does not prevent or limit gameplay.
-- We do not ask players to provide a name, email address, phone number, precise location, contacts, photos, audio recordings, or payment information through the Game.
+- We receive contact information only when someone voluntarily contacts us outside the Game, for example by email.
+- Earlier Google Play testing builds had different Unity Analytics and Diagnostics behavior. Section 4 explains that historical processing.
 
 ## 2. Information Stored Locally on the Device
 
-The Game stores a limited amount of information locally. Game progress and run snapshots use Unity's `PlayerPrefs` system, while Unity's consent framework stores the analytics choice:
+The Game uses Unity's local `PlayerPrefs` storage for:
 
-- best mass reached;
-- completed onboarding steps;
-- one-time tutorial-message status;
-- analytics consent status; and
-- a temporary snapshot of an unfinished run, including its start time, maximum mass, blobs eaten, escape attempts, and successful escapes.
+- the player's best mass;
+- completed onboarding steps; and
+- whether one-time tutorial or gameplay messages have already been shown.
 
-This information supports game progress, avoids repeating completed tutorials, remembers the player's analytics choice, and allows an interrupted run to be counted correctly if analytics was permitted. It is not transmitted to FirstBitStudio or Unity Analytics unless the player has allowed analytics and the applicable information forms part of an analytics event described below.
+This information is used only to preserve progress and avoid repeating completed instructions. The current Game does not send it to FirstBitStudio, Unity Analytics, or another analytics provider.
 
-Local information remains on the device until it is overwritten, the Game's local data is cleared, or the Game is uninstalled, subject to any device-level backup or restoration features controlled by the operating system or player.
+Local information remains on the device until it is overwritten, the Game's local storage is cleared, or the Game is uninstalled, subject to device-level backup or restoration features controlled by the operating system or player.
 
-## 3. Optional Analytics Information
+## 3. Information Provided When Contacting Us
 
-The Game uses **Unity Analytics**, provided by Unity Technologies, to understand game balance and player experience. Analytics collection is disabled until the player gives consent. If the player declines, queued analytics events are discarded and new analytics events are not sent.
+If a player, parent, or guardian contacts us by email, we receive the sender's email address, display name, message, attachments, and any other information they choose to provide. This information is not collected automatically by the Game.
 
-If analytics is allowed, Unity Analytics may automatically process:
+We use correspondence only to respond to support questions, complaints, and privacy requests; fulfill legal obligations; maintain necessary records; and protect our legal rights. We do not use support or privacy correspondence for marketing. Please do not send information that is not needed for the request.
 
-- IP address and approximate location derived from it, such as country or region;
-- a randomly generated, installation-specific identifier;
-- an analytics user identifier, which defaults to the installation identifier;
-- on Apple platforms, an Identifier for Vendor (IDFV), where available;
-- device, operating-system, platform, language or locale, app-version, and SDK information;
-- session identifiers, event timestamps, and event identifiers;
-- app lifecycle information, such as when the Game starts, runs, and closes; and
-- app diagnostics or performance information generated by the Unity Analytics SDK.
+## 4. Earlier Google Play Testing Builds
 
-The Game also sends the following developer-defined events:
+Some Google Play testing builds distributed before August 12, 2026 contained **Unity Analytics**. Analytics was optional and started only after the player selected **Allow**, but the choice was not limited to adults. When allowed, Unity Analytics could process:
 
-### Run started
+- IP address and approximate location derived from it;
+- a randomly generated installation or analytics identifier;
+- device, operating-system, platform, language, app-version, and SDK information;
+- session, event, and app-lifecycle information;
+- app diagnostics or performance information generated by the Analytics SDK; and
+- developer-defined gameplay events, including run start and end, survival time, maximum mass, blobs eaten, escape attempts, successful escapes, ending reason, and whether the player quit while alive.
 
-- Game version;
-- build channel, such as developer build or public test;
-- platform; and
-- control type, such as touch or keyboard and mouse.
+Those testing builds also enabled **Unity Engine Diagnostics** independently of the Analytics choice. Unity could automatically process crash reports, exception logs, Application Not Responding reports, performance and responsiveness telemetry, device and operating-system information, build information, and an installation or device identifier.
 
-### Run ended
+These earlier builds are being replaced or withdrawn. The current project has removed the Unity Analytics package and gameplay-event code, and has disabled Unity Engine Diagnostics and cloud crash reporting. Players with an earlier testing build should update to the newest available version.
 
-- Game version;
-- build channel;
-- survival time;
-- maximum mass reached;
-- number of blobs eaten;
-- number of escape attempts;
-- number of successful escapes;
-- cause of death or run ending; and
-- whether the player quit while still alive.
+Historical Analytics and Diagnostics information was used only to understand gameplay, improve balance, and diagnose technical performance. It was not used for advertising, credit decisions, or cross-app behavioral profiles.
 
-These custom gameplay events do not contain a player's name, email address, free-form text, or other information directly supplied by the player.
+## 5. Legal Bases
 
-## 4. How We Use Information
+Current local game information is processed as necessary to provide requested game functionality. It remains on the player's device and is not received by FirstBitStudio.
 
-We use optional analytics information to:
+When someone contacts us, we process the correspondence based on our legitimate interest in responding to inquiries and operating support and, where applicable, to comply with legal obligations. Providing contact information is voluntary, but we may be unable to answer or fulfill a request without enough information to understand it.
 
-- understand how many runs are started and completed;
-- measure run duration and progression;
-- evaluate game difficulty and balance;
-- understand whether capture and escape mechanics work as intended;
-- identify excessive or unusual death patterns;
-- compare development and public-test builds;
-- diagnose technical or performance issues; and
-- guide improvements to the Game.
-
-We do not use Game analytics for advertising, credit decisions, or building profiles for unrelated purposes.
-
-## 5. Legal Basis and Consent
-
-Where consent is required, we process analytics information on the basis of the player's consent. The Game requests this choice before enabling Unity Analytics collection. Choosing **No Thanks** leaves analytics disabled and does not affect the ability to play.
-
-Consent may be withdrawn at any time by contacting us using the details in Section 14. Withdrawing consent does not affect processing that was lawful before withdrawal. A player may also request deletion of analytics information as described in Section 9.
+Earlier optional Unity Analytics information was processed after the player selected **Allow**. Earlier Engine Diagnostics information was processed to identify crashes and technical problems. Players may contact us regarding historical information as described in Section 9.
 
 ## 6. Service Providers and Disclosure
 
-We disclose analytics information to **Unity Technologies** and its infrastructure providers only as necessary to operate Unity Analytics. Under European privacy law, Unity describes itself as a processor for Unity Analytics and FirstBitStudio as the controller. Unity may process data using cloud infrastructure in multiple countries.
+The current Game does not send gameplay analytics or diagnostics to a service provider.
 
-Unity's game-player privacy policy is available at:
+Messages sent to `firstbitstudio.dev@gmail.com` are delivered and stored using **Google's Gmail service** so that we can manage correspondence. Google's privacy policy is available at:
+
+https://policies.google.com/privacy
+
+The public copy of this policy is hosted using **GitHub Pages**. Opening the Privacy Policy link leaves the Game and opens the page in the device's browser. GitHub may process ordinary website-request information under its own privacy statement:
+
+https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+
+For the historical processing described in Section 4, information was provided to **Unity Technologies** and its infrastructure providers to operate Unity Analytics and Engine Diagnostics. Unity's game-player privacy policy is available at:
 
 https://unity.com/legal/game-player-and-app-user-privacy-policy
 
-We may also disclose information when reasonably necessary to comply with law, enforce legal rights, protect players or the public, or respond to valid legal process.
-
-We do not sell players' personal information. We do not share it for cross-context behavioral advertising, and the current Game does not use analytics information to track players across apps or websites owned by other companies.
+We may disclose information when reasonably necessary to comply with law, enforce legal rights, protect players or the public, or respond to valid legal process. We do not sell personal information or share it for cross-context behavioral advertising.
 
 ## 7. Data Retention
 
-Local information is retained as described in Section 2.
+Local game information is retained as described in Section 2.
 
-Unity states that raw Unity Analytics event data is generally retained for **13 months** and then automatically deleted. Unity may retain dashboard metrics and player-profile metrics until the player requests deletion or the developer initiates deletion. If a valid player-deletion request is submitted, Unity states that the associated analytics data is normally deleted within 30 days.
+Support and privacy correspondence is retained only for as long as reasonably needed to resolve the inquiry, maintain necessary records, comply with legal obligations, or establish, exercise, or defend legal claims.
 
-We do not maintain a separate server-side copy of the Game's raw analytics outside Unity Analytics. We retain information only for as long as needed for the purposes described in this policy, to meet legal obligations, or to resolve disputes.
+Historical Unity Analytics and Diagnostics information is retained according to Unity's applicable settings and terms. Unity states that raw Analytics event data is generally retained for 13 months and then automatically deleted, while some dashboard or player-profile metrics may remain until deletion is requested or initiated. FirstBitStudio does not maintain a separate server-side copy of the Game's raw Unity Analytics events.
 
 ## 8. Security
 
-Unity states that Unity Analytics data is encrypted in transit using HTTPS and encrypted at rest. We limit the custom events sent by the Game to the gameplay and build information listed in Section 3.
-
-No storage or transmission system can be guaranteed to be completely secure. We use reasonable technical and organizational measures appropriate to the limited nature of the information processed.
+The current Game minimizes risk by keeping ordinary game progress on the device and not transmitting gameplay analytics or automatic diagnostics. No storage or transmission system can be guaranteed to be completely secure. We use reasonable measures appropriate to the limited information we process.
 
 ## 9. Player Choices and Privacy Rights
 
-Depending on where a player lives, the player may have rights to:
+Depending on where a player lives, the player may have rights to request access, correction, deletion, restriction, objection, or portability and to complain to a local data-protection authority.
 
-- request access to personal information;
-- request correction or deletion;
-- object to or restrict certain processing;
-- receive a portable copy of certain information;
-- withdraw consent; and
-- complain to a local data-protection authority.
+Because the Game has no player account, there is no Game account to delete. Clearing the Game's storage or uninstalling it removes ordinary local game information, subject to operating-system backups.
 
-To exercise a right or request deletion of Unity Analytics data, contact us using the details in Section 14. We may need to provide instructions for locating the installation-specific analytics identifier so that the correct data can be identified. We may also need to verify a request where required by law.
+For questions or requests concerning contact correspondence or information sent by an earlier testing build, contact us using Section 13. We may need an installation identifier or other limited information, if available, to locate historical Unity data and may need to verify the request where required by law.
 
-Because the Game has no player accounts, there is no account to delete. Clearing the Game's storage or uninstalling it removes ordinary local game data from the device, subject to operating-system backups, but does not by itself delete analytics events previously sent to Unity. Contact us to request deletion of previously transmitted analytics data.
+Players may also complain to the supervisory authority where they live or work or where an alleged infringement occurred. In Italy, the supervisory authority is the [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/diritti/come%20-agire-per-tutelare-i-tuoi-dati-personali/reclamo).
 
 ## 10. International Data Transfers
 
-Unity and its infrastructure providers may process information outside the player's country. Unity states that its Analytics infrastructure includes facilities in the European Union and the United States. Where required, we and our service providers rely on legally recognized safeguards for international transfers.
+Google, GitHub, Unity, and their infrastructure providers may process information outside the player's country when someone contacts us, opens the externally hosted policy, or when historical Unity information is retained or deleted. Where required, the applicable providers rely on legally recognized transfer safeguards.
 
-## 11. Children
+## 11. Children and Teen Players
 
-The Game is not directed to children under 13, or under the minimum age required to consent to data processing in their country. We do not knowingly collect personal information from a child without the authorization required by applicable law.
+The current Game does not automatically collect or transmit gameplay analytics, advertising identifiers, or diagnostic information from children, teenagers, adults, or users of unknown age. The same gameplay is available without an age or Analytics question.
 
-If a parent or guardian believes that a child provided analytics consent without appropriate authorization, they should contact us. We will take reasonable steps to stop processing and request deletion where required.
+If a parent or guardian believes that information from a child was sent by an earlier testing build, they may contact us using Section 13. We will take reasonable steps to assist with deletion where required and technically possible.
 
-## 12. California Privacy Notice
+## 12. Changes to This Policy
 
-Depending on how applicable law classifies Unity Analytics data, the categories processed during the preceding 12 months may include identifiers, internet or electronic activity, approximate geolocation, device information, and gameplay activity. These categories are used only for the purposes described in Section 4 and are disclosed to the service providers described in Section 6.
+We may update this Privacy Policy when the Game, its services, or legal requirements change. The updated policy will show a revised version and date. If a change materially affects previously collected information, we will provide additional notice or request consent where required.
 
-We do not sell personal information and do not share personal information for cross-context behavioral advertising. We do not knowingly sell or share the personal information of consumers under 16 for those purposes.
-
-## 13. Changes to This Policy
-
-We may update this Privacy Policy when the Game, its services, or legal requirements change. The updated policy will show a revised "Last updated" date. If a change materially affects how previously collected information is used, we will provide additional notice or request consent where required.
-
-## 14. Contact Us
+## 13. Contact Us
 
 **Developer and data controller:** Giovanni Rizzo, operating as FirstBitStudio  
 **Privacy contact email:** firstbitstudio.dev@gmail.com  
 **Contact location:** Brescia, Italy
-
-Players may use the privacy contact above for questions, consent withdrawal, access requests, or deletion requests.
-
