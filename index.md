@@ -144,7 +144,11 @@ If a parent or guardian believes that information from a child was processed wit
 
 We may update this Privacy Policy when the Game, its services, or legal requirements change. The updated policy will show a revised version and date. If a change materially affects previously collected information, we will provide additional notice or request consent where required.
 
-## 13. Contact Us
+## 13. Support
+
+For help with Blob.you, bug reports, or feedback, contact firstbitstudio.dev@gmail.com. Please include your device model, game version, and a short description of the issue.
+
+## 14. Contact Us
 
 **Developer and data controller:** Giovanni Rizzo, operating as FirstBitStudio  
 **Privacy contact email:** firstbitstudio.dev@gmail.com  
