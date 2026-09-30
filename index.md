@@ -8,7 +8,9 @@
 
 Giovanni Rizzo, operating as FirstBitStudio ("FirstBitStudio," "we," "us," or "our"), provides the mobile game **Blob.you** (the "Game"). This Privacy Policy explains the information processed by the Game and the choices available to players.
 
-This policy applies to the Android and iOS versions of the Game, including Android APKs distributed directly or through itch.io. Advertising processing described here applies only to ad-enabled builds when the player allows ads; it does not mean that older ad-free builds have started collecting advertising data. Stores, download platforms, and third-party websites opened outside the Game have their own privacy policies.
+This policy applies to the Android and iOS and browser versions of the Game Advertising processing described here applies only to ad-enabled builds when the player allows ads; it does not mean that older ad-free builds have started collecting advertising data. Stores, download platforms, and third-party websites opened outside the Game have their own privacy policies.
+
+The browser version of Blob.you uses optional Adsterra banner ads. Adsterra is loaded only after the player selects **Allow Ads** and may process IP address, approximate location, browser/device information, cookies or similar technologies, and ad interactions to deliver and measure ads and prevent fraud. Players may decline or later disable ads through **Ad privacy** without losing access to ordinary gameplay. See [Adsterra’s Privacy Policy](https://adsterra.com/privacy-policy-managed).
 
 ## 1. Current Version at a Glance
 
