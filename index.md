@@ -1,14 +1,14 @@
 # Privacy Policy for Blob.you
 
-**Policy version:** 6.0 (ad-enabled release)
+**Policy version:** 6.1 (web gameplay analytics update)
 
 **Effective date:** September 12, 2026
 
-**Last updated:** September 12, 2026
+**Last updated:** October 7, 2026
 
-Giovanni Rizzo, operating as FirstBitStudio ("FirstBitStudio," "we," "us," or "our"), provides the mobile game **Blob.you** (the "Game"). This Privacy Policy explains the information processed by the Game and the choices available to players.
+Giovanni Rizzo, operating as FirstBitStudio ("FirstBitStudio," "we," "us," or "our"), provides the mobile and browser game **Blob.you** (the "Game"). This Privacy Policy explains the information processed by the Game and the choices available to players.
 
-This policy applies to the Android and iOS and browser versions of the Game Advertising processing described here applies only to ad-enabled builds when the player allows ads; it does not mean that older ad-free builds have started collecting advertising data. Stores, download platforms, and third-party websites opened outside the Game have their own privacy policies.
+This policy applies to the Android, iOS, and browser versions of the Game. Advertising processing described here applies only to ad-enabled builds when the player allows ads; it does not mean that older ad-free builds have started collecting advertising data. Stores, download platforms, and third-party websites opened outside the Game have their own privacy policies.
 
 The browser version of Blob.you uses optional Adsterra banner ads. Adsterra is loaded only after the player selects **Allow Ads** and may process IP address, approximate location, browser/device information, cookies or similar technologies, and ad interactions to deliver and measure ads and prevent fraud. Players may decline or later disable ads through **Ad privacy** without losing access to ordinary gameplay. See [Adsterra’s Privacy Policy](https://adsterra.com/privacy-policy-managed).
 
@@ -16,11 +16,11 @@ The browser version of Blob.you uses optional Adsterra banner ads. Adsterra is l
 
 - The Game does not require or provide player accounts.
 - Ad-enabled mobile builds offer optional rewarded revives and occasional ads between runs using Unity LevelPlay and Unity Ads, after the player allows ads.
-- The Game does not contain in-app purchases, social features, Unity Analytics, or another gameplay-analytics service. Ads are configured to be non-personalized. The Game sends advertising-ID opt-out settings and does not request iOS tracking permission; other technical identifiers may still be processed as described in Section 3.
+- The Game does not contain in-app purchases, social features, or Unity Analytics. The current Android and iOS versions do not send gameplay analytics. The browser version uses basic gameplay analytics as described in Section 3. Mobile ads are configured to be non-personalized. The mobile Game sends advertising-ID opt-out settings and does not request iOS tracking permission; other technical identifiers may still be processed as described in Section 3.
 - Unity Engine Diagnostics and Unity cloud crash reporting are disabled in the current version. This does not disable the advertising SDKs' own diagnostics when ads are enabled.
-- The Game does not send the player's mass, score, captures, survival time, or run-start/run-end events to a gameplay-analytics service. The advertising services process information as described below when ads are enabled.
+- The current Android and iOS versions do not send the player's mass, score, captures, survival time, or run-start/run-end events to a gameplay-analytics service. The browser version sends the limited usage measurements described in Section 3, but does not send mass or scores. The advertising services process information as described below when ads are enabled.
 - Basic progress and settings are stored locally on the player's device.
-- Selecting Not Now leaves advertising uninitialized on first launch. Ad Privacy in the menu and replay screen lets the player change this choice. Turning ads off stops new ad loads and displays from the Game and discards loaded ads; it does not unload an already initialized SDK or delete information already received by the advertising services. See Sections 3 and 9.
+- In the mobile versions, selecting Not Now leaves advertising uninitialized on first launch. Ad Privacy in the menu and replay screen lets the player change this choice. Turning ads off stops new ad loads and displays from the Game and discards loaded ads; it does not unload an already initialized SDK or delete information already received by the advertising services. See Sections 3 and 9.
 - We receive contact information only when someone voluntarily contacts us outside the Game, for example by email.
 - Earlier Google Play testing builds had different Unity Analytics and Diagnostics behavior. Section 4 explains that historical processing.
 
@@ -35,25 +35,27 @@ The Game uses Unity's local `PlayerPrefs` storage for:
 
 This information is used to preserve progress, avoid repeating completed instructions, and remember the player's advertising choice. The current Game does not send progress or onboarding records to FirstBitStudio, Unity Analytics, or another analytics provider. Advertising privacy signals are sent to the ad services when initialized. The advertising SDKs may also use local storage for their settings, identifiers, and cached advertising content after ads are enabled.
 
+The browser version also stores the Game stats opt-out preference locally in the browser. This preference is not a player identifier.
+
 Local information remains on the device until it is overwritten, the Game's local storage is cleared, or the Game is uninstalled, subject to device-level backup or restoration features controlled by the operating system or player.
 
 ## 3. Information Processed Off the Device
 
 ### Web Gameplay Analytics
 
-The web version uses Cloudflare to store daily aggregate counts of visits, game starts, replays, deaths and active playing time. No persistent player identifiers or analytics cookies are used. Cloudflare processes connection information, including IP addresses, to receive requests.
+The web version sends page-load, successful-load, game-start, replay and death counts, together with active playing time and completed-run durations, to a Cloudflare-hosted endpoint. We store these measurements as daily aggregate totals to understand engagement and improve the Game, not for advertising or cross-site tracking. Page loads are not counts of unique people. No persistent player identifiers or analytics cookies are used. Cloudflare processes connection information, including IP addresses, to receive requests.
 
 Disable analytics through **Game stats**; your preference is saved locally. We also respect Do Not Track and Global Privacy Control. Advertising practices are described separately.
 
-### Advertising in Ad-Enabled Builds
+### Advertising in Ad-Enabled Mobile Builds
 
-After the player selects **Allow Ads**, Unity LevelPlay manages requests and Unity Ads supplies ads. These services may process IP address and approximate location derived from it, device or app-installation identifiers and SDK-generated user identifiers, device model and operating system, language, network information, SDK/app versions, privacy signals, SDK session information, ad impressions, video completions, clicks, and SDK diagnostics. Processing supports ad delivery, measurement, service improvement, reliability, and fraud prevention. This data goes to Unity and the parties described in its advertising privacy policy, even though FirstBitStudio does not operate its own advertising server. We can view advertising performance and revenue reports through the providers' dashboards.
+In the Android and iOS versions, after the player selects **Allow Ads**, Unity LevelPlay manages requests and Unity Ads supplies ads. These services may process IP address and approximate location derived from it, device or app-installation identifiers and SDK-generated user identifiers, device model and operating system, language, network information, SDK/app versions, privacy signals, SDK session information, ad impressions, video completions, clicks, and SDK diagnostics. Processing supports ad delivery, measurement, service improvement, reliability, and fraud prevention. This data goes to Unity and the parties described in its advertising privacy policy, even though FirstBitStudio does not operate its own advertising server. We can view advertising performance and revenue reports through the providers' dashboards.
 
 The Game sends settings that decline personalized advertising and opt out of sale/sharing, together with LevelPlay's advertising-ID opt-out setting. The Android build configuration removes the advertising-ID permission, and the Game does not request App Tracking Transparency permission on iOS. These settings do not mean that all identifiers or network data are absent: non-personalized ads still involve technical data processing. We do not supply names, email addresses, precise location, or game scores to the advertising SDK.
 
 Rewarded ads require a separate, voluntary selection of **Revive**. Once ads are allowed, interstitial ads may also appear between runs without a separate choice for each ad. Ordinary replay remains available without selecting a rewarded ad. Declining advertising does not prevent ordinary gameplay, but ad-supported revives are unavailable while ads are off. Withdrawing the ad choice stops new ad requests from the Game. It does not unload an already initialized SDK: outstanding requests and SDK operational processing may continue during the current app session. On later launches with ads off, the Game does not initialize the advertising SDKs.
 
-Unity may act as an independent data controller for its advertising-related processing, rather than solely processing information on our behalf. Its processing and rights options are described in its [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy). The game is configured for Unity Ads as its only ad network; adding networks requires an updated notice.
+Unity may act as an independent data controller for its advertising-related processing, rather than solely processing information on our behalf. Its processing and rights options are described in its [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy). The mobile versions are configured for Unity Ads as their only ad network. The browser version uses Adsterra as described above; adding other networks requires an updated notice.
 
 Selecting an advertisement may open an advertiser's website or an app-store page. Any information provided there is subject to that destination's privacy policy.
 
@@ -78,7 +80,7 @@ Some Google Play testing builds distributed before August 12, 2026 contained **U
 
 Those testing builds also enabled **Unity Engine Diagnostics** independently of the Analytics choice. Unity could automatically process crash reports, exception logs, Application Not Responding reports, performance and responsiveness telemetry, device and operating-system information, build information, and an installation or device identifier.
 
-These earlier builds are being replaced or withdrawn. The current project has removed the Unity Analytics package and gameplay-event code, and has disabled Unity Engine Diagnostics and cloud crash reporting. Players with an earlier testing build should update to the newest available version.
+These earlier builds are being replaced or withdrawn. The current project has removed the Unity Analytics package and its associated gameplay-event code, and has disabled Unity Engine Diagnostics and cloud crash reporting. Players with an earlier testing build should update to the newest available version.
 
 Historical Analytics and Diagnostics information was used only to understand gameplay, improve balance, and diagnose technical performance. It was not used for advertising, credit decisions, or cross-app behavioral profiles.
 
@@ -86,7 +88,7 @@ Historical Analytics and Diagnostics information was used only to understand gam
 
 Current local game information is processed as necessary to provide requested game functionality. It remains on the player's device and is not received by FirstBitStudio.
 
-We rely on the player's consent to enable advertising SDKs and related optional device access. Unity describes its own legal bases for its processing, including legitimate interests for contextual advertising and service security, and legal obligations, in its privacy policy. Allowing ads in the Game is not consent to personalized advertising: the Game continues to send non-personalized settings. The ad choice may be withdrawn in **Ad Privacy** without preventing ordinary gameplay. Withdrawal does not affect the lawfulness of processing based on consent before withdrawal.
+We rely on the player's consent to enable advertising SDKs and related optional device access. Unity describes its own legal bases for its processing, including legitimate interests for contextual advertising and service security, and legal obligations, in its privacy policy. Allowing ads in the mobile Game is not consent to personalized advertising: the mobile Game continues to send non-personalized settings. The ad choice may be withdrawn in **Ad Privacy** without preventing ordinary gameplay. Withdrawal does not affect the lawfulness of processing based on consent before withdrawal.
 
 When someone contacts us, we process the correspondence based on our legitimate interest in responding to inquiries and operating support and, where applicable, to comply with legal obligations. Providing contact information is voluntary, but we may be unable to answer or fulfill a request without enough information to understand it.
 
@@ -94,7 +96,7 @@ Earlier optional Unity Analytics information was processed after the player sele
 
 ## 6. Service Providers and Disclosure
 
-The current Game does not send developer-defined gameplay analytics or Unity Engine Diagnostics. Ad-enabled builds send advertising-related information to Unity LevelPlay and Unity Ads after the player's choice, as described in Section 3.
+The current Android and iOS versions do not send developer-defined gameplay analytics. Unity Engine Diagnostics is disabled in the current Game. The browser version uses Cloudflare to receive gameplay measurements and store daily aggregates as described in Section 3. Ad-enabled mobile builds send advertising-related information to Unity LevelPlay and Unity Ads after the player's choice; the browser version uses optional Adsterra advertising as described above.
 
 Messages sent to `firstbitstudio.dev@gmail.com` are delivered and stored using **Google's Gmail service** so that we can manage correspondence. Google's privacy policy is available at:
 
@@ -110,13 +112,15 @@ For the historical processing described in Section 4, information was provided t
 
 https://unity.com/legal/game-player-and-app-user-privacy-policy
 
-We may disclose information when reasonably necessary to comply with law, enforce legal rights, protect players or the public, or respond to valid legal process. We do not sell personal information for money. The advertising integration sends a do-not-sell/share signal and does not request personalized or cross-app behavioral advertising.
+We may disclose information when reasonably necessary to comply with law, enforce legal rights, protect players or the public, or respond to valid legal process. We do not sell personal information for money. The mobile advertising integration sends a do-not-sell/share signal and does not request personalized or cross-app behavioral advertising.
 
 ## 7. Data Retention
 
 Local game information is retained as described in Section 2.
 
-Advertising information is retained under Unity's applicable privacy policy. Retention depends on the service relationship, fraud-prevention needs, legal and accounting obligations, and the establishment or defense of legal claims; there is no single fixed period promised here for all advertising data. Disabling ads does not automatically erase previously transmitted information. Contact us or Unity to request help with access or deletion.
+Mobile advertising information is retained under Unity's applicable privacy policy; browser advertising information is handled under Adsterra's policy. Retention depends on the service relationship, fraud-prevention needs, legal and accounting obligations, and the establishment or defense of legal claims; there is no single fixed period promised here for all advertising data. Disabling ads does not automatically erase previously transmitted information. Contact us or the relevant advertising provider to request help with access or deletion.
+
+Web gameplay statistics are stored as daily aggregate totals, not individual visit histories. The current analytics database has no automatic expiry configured for these totals. Disabling analytics stops future measurements; it does not remove existing aggregate counts, which cannot be attributed to a particular player using the stored data.
 
 Support and privacy correspondence is retained only for as long as reasonably needed to resolve the inquiry, maintain necessary records, comply with legal obligations, or establish, exercise, or defend legal claims.
 
@@ -124,7 +128,7 @@ Historical Unity Analytics and Diagnostics information is retained according to 
 
 ## 8. Security
 
-The Game keeps ordinary game progress on the device and does not transmit gameplay analytics or Unity Engine Diagnostics. Advertising introduces the data processing described above. Unity's published SDK disclosures describe encryption in transit for information collected by [LevelPlay](https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/google-data-safety-questionnaire) and [Unity Ads](https://docs.unity.com/en-us/ads-android/4.20.0/privacy/developer-consent/disclosures/google-data-safety). No storage or transmission system can be guaranteed to be completely secure. We use reasonable measures appropriate to the information we process.
+The Game keeps ordinary game progress on the device. The current Android and iOS versions do not transmit gameplay analytics, and Unity Engine Diagnostics is disabled. The browser version transmits the limited gameplay measurements described in Section 3 over HTTPS. Advertising introduces the data processing described above. Unity's published SDK disclosures describe encryption in transit for information collected by [LevelPlay](https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/google-data-safety-questionnaire) and [Unity Ads](https://docs.unity.com/en-us/ads-android/4.20.0/privacy/developer-consent/disclosures/google-data-safety). No storage or transmission system can be guaranteed to be completely secure. We use reasonable measures appropriate to the information we process.
 
 ## 9. Player Choices and Privacy Rights
 
@@ -132,21 +136,23 @@ Depending on where a player lives, the player may have rights to request access,
 
 Because the Game has no player account, there is no Game account to delete. Clearing the Game's storage or uninstalling it removes ordinary local game information, subject to operating-system backups.
 
-To withdraw the ad choice, open **Ad Privacy** on the main menu or replay screen and select **Not Now**. This stops new ad requests from the Game and discards loaded ads, subject to the SDK-session limitation explained in Section 3. Requests concerning advertising information can be directed to us or to Unity at **DPO@unity3d.com**, specifying Blob.you and the relevant service, such as Unity Ads or LevelPlay. Where available, an ad's privacy icon also provides Unity's privacy options. Uninstalling the Game does not itself delete advertising information held by a provider.
+In the mobile versions, to withdraw the ad choice, open **Ad Privacy** on the main menu or replay screen and select **Not Now**. This stops new ad requests from the Game and discards loaded ads, subject to the SDK-session limitation explained in Section 3. Requests concerning advertising information can be directed to us or to Unity at **DPO@unity3d.com**, specifying Blob.you and the relevant service, such as Unity Ads or LevelPlay. Where available, an ad's privacy icon also provides Unity's privacy options. Uninstalling the Game does not itself delete advertising information held by a provider.
 
-For questions or requests concerning contact correspondence or information sent by an earlier testing build, contact us using Section 13. We may need an installation identifier or other limited information, if available, to locate historical Unity data and may need to verify the request where required by law.
+In the browser version, use **Ad privacy** to change the advertising choice and **Game stats** to disable gameplay analytics. Gameplay analytics also respect Do Not Track and Global Privacy Control. Clearing browser storage removes the locally saved preference; the browser signals, if enabled, still apply.
+
+For questions or requests concerning contact correspondence or information sent by an earlier testing build, contact us using Section 14. We may need an installation identifier or other limited information, if available, to locate historical Unity data and may need to verify the request where required by law.
 
 Players may also complain to the supervisory authority where they live or work or where an alleged infringement occurred. In Italy, the supervisory authority is the [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/diritti/come%20-agire-per-tutelare-i-tuoi-dati-personali/reclamo).
 
 ## 10. International Data Transfers
 
-Google, GitHub, Cloudflare, Unity, and their infrastructure providers may process information outside the player's country when someone contacts us, opens the externally hosted policy, uses enabled advertising, or when historical Unity information is retained or deleted. Unity identifies processing locations including the United States and Israel. For relevant transfers outside the EEA or UK, providers describe safeguards such as adequacy decisions or Standard Contractual Clauses in their linked policies. Players can contact us for help locating applicable safeguards, or contact the relevant provider to request a copy; Unity provides this option through the contact details in its privacy policy.
+Google, GitHub, Cloudflare, Unity, Adsterra, and their infrastructure providers may process information outside the player's country when someone contacts us, opens the externally hosted policy, uses the browser Game and its gameplay analytics, uses enabled advertising, or when historical Unity information is retained or deleted. Unity identifies processing locations including the United States and Israel. For relevant transfers outside the EEA or UK, providers describe safeguards such as adequacy decisions or Standard Contractual Clauses in their linked policies. Players can contact us for help locating applicable safeguards, or contact the relevant provider to request a copy; Unity provides this option through the contact details in its privacy policy.
 
 ## 11. Children and Teen Players
 
-The Game's intended audience is age 13 and above; it is not directed at children under 13. Advertising is configured for non-personalized ads with the privacy settings described in Section 3. The same ordinary gameplay is available when advertising is declined. Where local law requires a parent or guardian's authorization for consent, a minor should not enable ads without that authorization.
+The Game's intended audience is age 13 and above; it is not directed at children under 13. Mobile advertising is configured for non-personalized ads with the privacy settings described in Section 3. The same ordinary gameplay is available when advertising is declined. Where local law requires a parent or guardian's authorization for consent, a minor should not enable ads without that authorization.
 
-If a parent or guardian believes that information from a child was processed without the required authorization, including through advertising or an earlier testing build, they may contact us using Section 13. We will take reasonable steps to assist with deletion where required and technically possible.
+If a parent or guardian believes that information from a child was processed without the required authorization, including through advertising or an earlier testing build, they may contact us using Section 14. We will take reasonable steps to assist with deletion where required and technically possible.
 
 ## 12. Changes to This Policy
 
@@ -161,3 +167,4 @@ For help with Blob.you, bug reports, or feedback, contact firstbitstudio.dev@gma
 **Developer and data controller:** Giovanni Rizzo, operating as FirstBitStudio  
 **Privacy contact email:** firstbitstudio.dev@gmail.com  
 **Contact location:** Brescia, Italy
+
