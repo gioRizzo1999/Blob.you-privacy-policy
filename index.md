@@ -39,6 +39,12 @@ Local information remains on the device until it is overwritten, the Game's loca
 
 ## 3. Information Processed Off the Device
 
+### Web Gameplay Analytics
+
+The web version uses Cloudflare to store daily aggregate counts of visits, game starts, replays, deaths and active playing time. No persistent player identifiers or analytics cookies are used. Cloudflare processes connection information, including IP addresses, to receive requests.
+
+Disable analytics through **Game stats**; your preference is saved locally. We also respect Do Not Track and Global Privacy Control. Advertising practices are described separately.
+
 ### Advertising in Ad-Enabled Builds
 
 After the player selects **Allow Ads**, Unity LevelPlay manages requests and Unity Ads supplies ads. These services may process IP address and approximate location derived from it, device or app-installation identifiers and SDK-generated user identifiers, device model and operating system, language, network information, SDK/app versions, privacy signals, SDK session information, ad impressions, video completions, clicks, and SDK diagnostics. Processing supports ad delivery, measurement, service improvement, reliability, and fraud prevention. This data goes to Unity and the parties described in its advertising privacy policy, even though FirstBitStudio does not operate its own advertising server. We can view advertising performance and revenue reports through the providers' dashboards.
